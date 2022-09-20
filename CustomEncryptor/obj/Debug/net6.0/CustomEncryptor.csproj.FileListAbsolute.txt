@@ -1,0 +1,15 @@
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\bin\Debug\net6.0\CustomEncryptor.exe
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\bin\Debug\net6.0\CustomEncryptor.deps.json
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\bin\Debug\net6.0\CustomEncryptor.runtimeconfig.json
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\bin\Debug\net6.0\CustomEncryptor.dll
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\bin\Debug\net6.0\CustomEncryptor.pdb
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.csproj.AssemblyReference.cache
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.AssemblyInfoInputs.cache
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.AssemblyInfo.cs
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.csproj.CoreCompileInputs.cache
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.dll
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\refint\CustomEncryptor.dll
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.pdb
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\CustomEncryptor.genruntimeconfig.cache
+C:\Users\balib\source\repos\CustomEncryptor\CustomEncryptor\obj\Debug\net6.0\ref\CustomEncryptor.dll
