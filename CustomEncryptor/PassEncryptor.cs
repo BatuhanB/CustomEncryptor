@@ -3,15 +3,15 @@ using System.Text;
 
 namespace CustomEncryptor;
 
-public class PassEncryptor
+public static class PassEncryptor
 {
-    private char[] fullArray = new[] { '0','1','2','3','4','5','6','7','8','9',
+    private static char[] fullArray = new[] { '0','1','2','3','4','5','6','7','8','9',
         'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
         'P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d',
         'e','f','g','h','i','j','k','l','m','n','o','p','q',
         'r','s','t','u','v','w','x','y','z','+', '-', '&', '|',
         '!', '(', ')', '{', '}', '[', ']', '^', '~', '*', '?', ':'};
-    public string NextLetterEnc(string password, int nextCount)
+    public static string NextLetterEnc(string password, int nextCount)
     {
         StringBuilder sb = new();
         for (int i = 0; i < password.Length; i++)
@@ -28,7 +28,7 @@ public class PassEncryptor
         return sb.ToString();
     }
 
-    public string NextLetterDec(string encrypted)
+    public static string NextLetterDec(string encrypted)
     {
         var nextCount = encrypted.Contains(".") ? int.Parse(encrypted.Substring(encrypted.LastIndexOf(".") + 1)) : 1;
         StringBuilder sb = new();
@@ -47,7 +47,7 @@ public class PassEncryptor
         return sb.ToString();
     }
 
-    public string ByteBaseEnc(string password)
+    public static string ByteBaseEnc(string password)
     {
         List<string> randomNumbers = new();
         StringBuilder sb = new();
@@ -71,7 +71,7 @@ public class PassEncryptor
         return sb.ToString();
     }
 
-    public string ByteBaseDesc(string password)
+    public static string ByteBaseDec(string password)
     {
         var arr = password.Split('.', StringSplitOptions.RemoveEmptyEntries);
         var randomNumberArr = arr[^1];
@@ -98,7 +98,7 @@ public class PassEncryptor
         return sb.ToString();
     }
 
-    public string RandomByteBaseEnc(string password,string key)
+    public static string RandomByteBaseEnc(string password,string key)
     {
         var sb = new StringBuilder();
         var seed = key.ToCharArray().Select(x => (byte)x).Sum(x=>x);
@@ -112,15 +112,21 @@ public class PassEncryptor
         return sb.ToString();
     }
 
-    public string MD5_Enc(string text)
+    public static string MD5_Enc(string text)
     {
         using MD5 md5 = MD5.Create();
         var passBytes = md5.ComputeHash(Encoding.UTF8.GetBytes(text));
         return BitConverter.ToString(passBytes).Replace("-","");
     }
-    public string SHA256_Enc(string text)
+    public static string SHA256_Enc(string text)
     {
         using SHA256 sha = SHA256.Create();
+        var passBytes = sha.ComputeHash(Encoding.UTF8.GetBytes(text));
+        return BitConverter.ToString(passBytes).Replace("-","");
+    }
+    public static string SHA512_Enc(string text)
+    {
+        using SHA512 sha = SHA512.Create();
         var passBytes = sha.ComputeHash(Encoding.UTF8.GetBytes(text));
         return BitConverter.ToString(passBytes).Replace("-","");
     }
